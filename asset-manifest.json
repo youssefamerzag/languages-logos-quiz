@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/languages-logos-quiz/static/css/main.8c0adf5d.css",
+    "main.js": "/languages-logos-quiz/static/js/main.38b3d474.js",
+    "index.html": "/languages-logos-quiz/index.html",
+    "main.8c0adf5d.css.map": "/languages-logos-quiz/static/css/main.8c0adf5d.css.map",
+    "main.38b3d474.js.map": "/languages-logos-quiz/static/js/main.38b3d474.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c0adf5d.css",
+    "static/js/main.38b3d474.js"
+  ]
+}
