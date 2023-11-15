@@ -2,14 +2,18 @@ import React from 'react';
 import { useRef, useState } from 'react';
 import './App.css';
 import { useEffect } from 'react';
+import html from './imgs/html.png'
+import redux from './imgs/redux.png'
+import swift from './imgs/swift.png'
+import mongodb from './imgs/mongodb.png'
 
 
 function App() {
   const imgs = [
-    {id : 3 , source : "./imgs/swift.png",},
-    {id : 0 , source : "./imgs/html.png",},
-    {id : 2 , source : "./imgs/mongodb.png" ,},
-    {id : 1 , source : "./imgs/redux.png",},
+    {id : 3 , source : swift},
+    {id : 0 , source : html},
+    {id : 2 , source : mongodb },
+    {id : 1 , source : redux}
 
   ]
 
@@ -23,7 +27,6 @@ function App() {
 
   const wordcolor = useRef(words.map(() => React.createRef()))
   const imgbackground = useRef(imgs.map(() => React.createRef()))
- 
 
   const [choosingimg , setchoosingimg] = useState()
   const [choosingword , setchoosingword] = useState()
@@ -31,6 +34,7 @@ function App() {
 
   const imganswer =(id)=> {
     setchoosingimg(imgs[id].id)
+    imgbackground.current[imgs[id].id].current.style.backgroundColor = 'lightblue'
     console.log(choosingimg)
   }
 
