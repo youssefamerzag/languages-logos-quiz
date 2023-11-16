@@ -12,7 +12,6 @@ import typescript from './imgs/typescript.png'
 import nodejs from './imgs/nodejs.png'
 
 
-
 function App() {
   const imgs = [
     {id : 7 , source : typescript},
@@ -23,9 +22,6 @@ function App() {
     {id : 0 , source : mongodb },
     {id : 3 , source : redux},
     {id : 6 , source : ruby},
-
-
-
   ]
 
   const words = [
@@ -46,17 +42,27 @@ function App() {
   const [choosingimg , setchoosingimg] = useState()
   const [choosingword , setchoosingword] = useState()
   const [score , setscore] = useState(0)
+
+
   
 
   const imganswer =(id)=> {
     setchoosingimg(imgs[id].id)
     imgbackground.current[imgs[id].id].current.style.backgroundColor = 'lightblue'
+    if (choosingimg !== undefined) {
+      imgbackground.current[choosingimg].current.style.backgroundColor = null;
+    } 
     console.log(choosingimg)
   }
 
+  
   const wordanswer =(id)=> {
     setchoosingword(words[id].id)
-    wordcolor.current[words[id].id].current.style.backgroundColor = 'lightblue'
+    if (wordcolor !== undefined) {
+      wordcolor.current[words[id].id].current.style.backgroundColor = null
+    }else {
+      wordcolor.current[words[id].id].current.style.backgroundColor = 'lightblue'
+    }
     console.log(choosingword)
   }
 
@@ -64,7 +70,10 @@ function App() {
     if(choosingimg !== undefined && choosingword !== undefined){
       if(choosingimg === choosingword){
         setscore(score + 1)
-        if(score === 8 - 1) {alert('You Win')}
+        if(score === 8 - 1) {
+          alert('You Win!!')
+          window.location.reload()
+        }
         wordcolor.current[choosingword].current.style.backgroundColor = 'lightgreen';
         imgbackground.current[choosingimg].current.style.backgroundColor = 'lightgreen'
         setchoosingimg()
