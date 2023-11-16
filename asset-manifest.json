@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/languages-logos-quiz/static/css/main.8c0adf5d.css",
-    "main.js": "/languages-logos-quiz/static/js/main.cd0de395.js",
+    "main.css": "/languages-logos-quiz/static/css/main.f3e3a7e6.css",
+    "main.js": "/languages-logos-quiz/static/js/main.90315cd5.js",
+    "static/media/reactjs.png": "/languages-logos-quiz/static/media/reactjs.834c9e6e22969702915a.png",
     "index.html": "/languages-logos-quiz/index.html",
-    "main.8c0adf5d.css.map": "/languages-logos-quiz/static/css/main.8c0adf5d.css.map",
-    "main.cd0de395.js.map": "/languages-logos-quiz/static/js/main.cd0de395.js.map"
+    "main.f3e3a7e6.css.map": "/languages-logos-quiz/static/css/main.f3e3a7e6.css.map",
+    "main.90315cd5.js.map": "/languages-logos-quiz/static/js/main.90315cd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c0adf5d.css",
-    "static/js/main.cd0de395.js"
+    "static/css/main.f3e3a7e6.css",
+    "static/js/main.90315cd5.js"
   ]
 }
