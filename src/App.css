@@ -17,31 +17,45 @@ h1 {
 #imgs {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  background-color: #fefee3;
 }
 
 #imgs img {
-  border: 2px solid #fff;
-  border-radius: 8px;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  width: 130px;
+  transition: 0.5s;
 }
 
 #imgs img:hover {
   transform: scale(1.1);
+  background-color: #333;
+  transition: 0.5s;
 }
 
 #words {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 60px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin : 30px;
+  padding: 10px;
+  background-color: #fefee3;
 }
 
 #words p {
-  font-size: 50px;
-  padding: 40px;
+  font-size: 20px;
+  padding: 35px;
   border: 2px solid #333;
   border-radius: 8px;
   margin: 10px;
