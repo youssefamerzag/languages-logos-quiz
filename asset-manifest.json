@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/languages-logos-quiz/static/css/main.f3e3a7e6.css",
-    "main.js": "/languages-logos-quiz/static/js/main.34b06446.js",
+    "main.js": "/languages-logos-quiz/static/js/main.5638c3cc.js",
     "static/media/reactjs.png": "/languages-logos-quiz/static/media/reactjs.834c9e6e22969702915a.png",
     "index.html": "/languages-logos-quiz/index.html",
     "main.f3e3a7e6.css.map": "/languages-logos-quiz/static/css/main.f3e3a7e6.css.map",
-    "main.34b06446.js.map": "/languages-logos-quiz/static/js/main.34b06446.js.map"
+    "main.5638c3cc.js.map": "/languages-logos-quiz/static/js/main.5638c3cc.js.map"
   },
   "entrypoints": [
     "static/css/main.f3e3a7e6.css",
-    "static/js/main.34b06446.js"
+    "static/js/main.5638c3cc.js"
   ]
 }
